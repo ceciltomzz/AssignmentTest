@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Set;
 
 public class DictionaryUtil {
@@ -50,6 +51,7 @@ public class DictionaryUtil {
      * @return
      */
     public static String[] getAllPossibleCombinations(String inputstring) {
+        inputstring=inputstring.toLowerCase();
         int n = inputstring.length();
         String[] inputArray = new String[n];
         for (int i = 0; i < n; i++) {
