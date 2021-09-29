@@ -10,5 +10,6 @@ public class TestRunner {
             permSet=DictionaryUtil.getCombinations(posiblecom);
         }
         System.out.println(permSet);
+        System.out.println(permSet.size());
     }
 }

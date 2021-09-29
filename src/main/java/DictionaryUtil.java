@@ -20,7 +20,10 @@ public class DictionaryUtil {
             Set<String> qq = getCombinations(st);
             for (String str : qq) {
                 for (int i = 0; i <= str.length(); i++) {
-                    ss.add(comb(str, c, i));
+                    if(Dictionary.isEnglish(str)){
+                        ss.add(comb(str, c, i));
+                    }
+
                 }
             }
         }
